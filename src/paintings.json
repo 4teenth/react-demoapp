@@ -1,0 +1,24 @@
+[
+  {
+    "id": "id-1",
+    "url": "https://cdn.pixabay.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg",
+    "title": "Feathers. Art Abstraction",
+    "price": 500,
+    "author": {
+      "tag": "ractapopulous",
+      "url": "https://cdn.pixabay.com/users/ractapopulous-24766"
+    },
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "url": "https://i.redd.it/zjdzlw0yhdv41.jpg",
+    "title": "Bird. Animal art abstract",
+    "price": 400,
+    "author": {
+      "tag": "brenunsk",
+      "url": "https://redditery.com/user/brenunsk/submitted"
+    },
+    "quantity": 15
+  }
+]
