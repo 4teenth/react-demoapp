@@ -16,6 +16,7 @@ const App = () => {
         price={paintings[0].price}
         profileUrl={paintings[0].author.url}
         tag={paintings[0].author.tag}
+        quantity={paintings[0].quantity}
         // a={5}
         // b={10}
       />
@@ -23,9 +24,10 @@ const App = () => {
       <Painting
         url="https://i.redd.it/zjdzlw0yhdv41.jpg"
         title="Bird. Animal art abstract"
-        price="400"
+        price={400}
         profileUrl="https://redditery.com/user/brenunsk/submitted"
         tag="brenunsk"
+        quantity={3 + 1}
       />
     </div>
   );
