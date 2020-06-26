@@ -13,12 +13,23 @@
   {
     "id": "id-2",
     "url": "https://i.redd.it/zjdzlw0yhdv41.jpg",
-    "title": "Bird. Animal art abstract",
+    "title": "Squirrel. Animals",
     "price": 400,
     "author": {
       "tag": "brenunsk",
       "url": "https://redditery.com/user/brenunsk/submitted"
     },
     "quantity": 15
+  },
+  {
+    "id": "id-3",
+    "url": "https://i.redd.it/e66k4jfbqu651.jpg",
+    "title": "Art. Art abstract",
+    "price": 600,
+    "author": {
+      "tag": "NoahVerrier",
+      "url": "https://redditery.com/user/NoahVerrier/submitted"
+    },
+    "quantity": 5
   }
 ]
