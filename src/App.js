@@ -6,6 +6,16 @@ import PaintingList from "./components/PaintingList";
 import Panel from "./components/Panel";
 import paintings from "./paintings.json";
 
+//from webinar 2
+const colorPickerOptions = [
+  { label: "red", color: "#F44336" },
+  { label: "green", color: "#4CAF50" },
+  { label: "blue", color: "2196F3" },
+  { label: "grey", color: "607D8B" },
+  { label: "pink", color: "E91E63" },
+  { label: "indigo", color: "3F51B5" },
+];
+
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.map((number) => <div>{number}</div>));
 
@@ -24,7 +34,7 @@ const App = () => {
           dicta facere sapiente, impedit officia laboriosam nulla distinctio
           optio tempora rem repudiandae.
         </p>
-        <a href="">Read more here...</a>
+        <a href="www.google.com">Read more here...</a>
       </Panel>
 
       <Panel>
