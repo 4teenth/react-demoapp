@@ -1,6 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'modern-normalize/modern-normalize.css';
+//импорт базовых глоб.стилей
+import './styles.css';
 
 //Как рендерится компонент:
 // React.createElement(App);
@@ -12,7 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 //---------DELETED--------------------demo prev

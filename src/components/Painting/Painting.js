@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 //потому что буду использовать JSX
-import PropTypes from "prop-types";
-import defaultImg from "./default-img.jpg";
+import PropTypes from 'prop-types';
+import defaultImg from './default-img.jpg';
+import './Painting.css';
 // console.log(defaultImg);
 
 // const Painting = (props) => {
@@ -37,7 +38,7 @@ import defaultImg from "./default-img.jpg";
 // };
 //OR without const availability
 const Painting = ({ url, title, price, profileUrl, tag, quantity }) => (
-  <div>
+  <div className="Painting">
     {/* не рендерятся
     {false}
     {null}
@@ -48,7 +49,7 @@ const Painting = ({ url, title, price, profileUrl, tag, quantity }) => (
       Автор: <a href={profileUrl}>{tag}</a>
     </p>
     <p>Цена: {price} кредитов</p>
-    <p>Доступность: {quantity < 10 ? "Almost sold" : "In stock"}</p>
+    <p>Доступность: {quantity < 10 ? 'Almost sold' : 'In stock'}</p>
     <button type="button">Добавить в корзину</button>
   </div>
 );

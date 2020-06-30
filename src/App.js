@@ -1,19 +1,25 @@
-import React from "react";
-import Logo from "./components/Logo";
+//Modules
+import React from 'react';
+
+//Components
+import Logo from './components/Logo';
 //RULE!!! One file - one component
 // import Painting from "./components/Painting";
-import PaintingList from "./components/PaintingList";
-import Panel from "./components/Panel";
-import paintings from "./paintings.json";
+import PaintingList from './components/PaintingList/PaintingList';
+import Panel from './components/Panel';
+import ColorPicker from './components/ColorPicker/ColorPicker';
+
+//Styles
+import paintings from './paintings.json';
 
 //from webinar 2
 const colorPickerOptions = [
-  { label: "red", color: "#F44336" },
-  { label: "green", color: "#4CAF50" },
-  { label: "blue", color: "2196F3" },
-  { label: "grey", color: "607D8B" },
-  { label: "pink", color: "E91E63" },
-  { label: "indigo", color: "3F51B5" },
+  { label: 'red', color: '#F44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#E91E63' },
+  { label: 'indigo', color: '#3F51B5' },
 ];
 
 // const numbers = [1, 2, 3, 4, 5];
@@ -27,6 +33,7 @@ const colorPickerOptions = [
 const App = () => {
   return (
     <div>
+      <ColorPicker options={colorPickerOptions} />
       <Panel title="Latest news">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate,

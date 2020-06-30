@@ -1,12 +1,38 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
+//статические св-ва в отдельной переменной
+// const styles = {
+//   outline: "1px solid tomato",
+// };
+
+// const Panel = ({ title, children }) => (
+//   <div style={styles}>
+//     {title && <h2>{title}</h2>}
+
+//     {children}
+//   </div>
+// );
+
+//from webinar 2
+//юзаем статические св-ва(стили) - инлайн стили
 const styles = {
-  outline: "1px solid tomato",
+  container: {
+    width: 200,
+    border: '2px solid cyan',
+    background: 'pink',
+  },
 };
 
 const Panel = ({ title, children }) => (
-  <div style={styles}>
+  <div
+    style={styles.container}
+    // style={{
+    //   width: 200,
+    //   border: "2px solid cyan",
+    //   background: "pink",
+    // }}
+  >
     {title && <h2>{title}</h2>}
 
     {children}
@@ -14,7 +40,7 @@ const Panel = ({ title, children }) => (
 );
 
 Panel.defaultProps = {
-  title: "",
+  title: '',
   children: [],
 };
 
