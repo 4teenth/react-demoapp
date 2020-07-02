@@ -1,14 +1,16 @@
 //Modules
 import React from 'react';
-
 //Components
-import Logo from './components/Logo';
+// import Logo from './components/Logo'; - уже не нужен здесь, переехал в AppBar
 //RULE!!! One file - one component
-// import Painting from "./components/Painting";
+// import Painting from "./components/Painting"; - уже не нужен здесь, переехал в PaintingList
 import PaintingList from './components/PaintingList/PaintingList';
-import Panel from './components/Panel';
+import Panel from './components/Panel/Panel';
 import ColorPicker from './components/ColorPicker/ColorPicker';
-
+import Notification from './components/Notification/Notification';
+// import Container from './components/Container/Container'; - уже не нужен здесь, переехал в Layouts
+// import AppBar from './components/AppBar/AppBar'; - уже не нужен здесь, переехал в Layouts
+import Layout from './components/Layout/Layout';
 //Styles
 import paintings from './paintings.json';
 
@@ -32,8 +34,14 @@ const colorPickerOptions = [
 //Пропсы передаются от туда, от куда мы рендерим компонент, а используются в самом компоненте (e.g. Painting)
 const App = () => {
   return (
-    <div>
+    // React.Fragment OR <>
+    <Layout>
       <ColorPicker options={colorPickerOptions} />
+
+      <Notification text="СSS-Модули это хорошо" type="success" />
+
+      <Notification text="СSS-Модули это плохо" type="error" />
+
       <Panel title="Latest news">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate,
@@ -44,16 +52,10 @@ const App = () => {
         <a href="www.google.com">Read more here...</a>
       </Panel>
 
-      <Panel>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          tenetur, aspernatur corporis a aut eos cumque, sed cum animi nesciunt
-          delectus quia! Non, atque. Quasi veritatis dolore saepe sed itaque.
-        </p>
+      <Panel title2nd="Popular profiles below">
+        <p>Popular profiles below - Check this out!</p>
+        {/* <PaintingList paintingsProps={paintings} /> - try this if u wanna */}
       </Panel>
-
-      {/* <h1>Главный компонент-контейнер приложения</h1> */}
-      <Logo text="Главный компонент-контейнер приложения" />
 
       <PaintingList paintingsProps={paintings} />
 
@@ -98,7 +100,8 @@ const App = () => {
         tag="brenunsk"
         quantity={3 + 1}
       /> */}
-    </div>
+    </Layout>
+    // /React.Fragment OR </>
   );
 };
 
